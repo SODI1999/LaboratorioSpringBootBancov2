@@ -1,0 +1,231 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 860" width="100%" height="100%" style="background:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <filter id="shadow" x="-4%" y="-2%" width="108%" height="108%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.06"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#475569"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#059669"/>
+    </marker>
+  </defs>
+
+  <!-- Title & Context Header -->
+  <rect x="30" y="25" width="1040" height="55" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="50" y="52" font-size="16" font-weight="700" fill="#0f172a">DIAGRAMA DE ARQUITECTURA DE SOFTWARE POR CAPAS (C4 MODEL - N-TIER)</text>
+  <text x="50" y="70" font-size="11" font-weight="500" fill="#64748b">Sistema Bancario Transaccional con Aislamiento ACID y Códigos QR • Tecnológico de Antioquia 2026</text>
+  <rect x="910" y="40" width="145" height="26" rx="4" fill="#0f172a"/>
+  <text x="982" y="57" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">VERSIÓN 1.0 PRODUCCIÓN</text>
+
+  <!-- CAPA 1: PRESENTACIÓN (SPA) -->
+  <g transform="translate(30, 95)">
+    <rect x="0" y="0" width="1040" height="135" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="1040" height="30" rx="10" fill="#e2e8f0"/>
+    <rect x="0" y="20" width="1040" height="10" fill="#e2e8f0"/>
+    <text x="16" y="20" font-size="12" font-weight="700" fill="#0f172a">CAPA 1: CLIENTE WEB SINGLE PAGE APPLICATION (SPA)</text>
+    <text x="780" y="20" font-size="11" font-weight="600" fill="#475569">React 18.3.1 • TypeScript 5.7 • Vite 6.0.7 • Puerto 5173</text>
+
+    <!-- Componentes Frontend -->
+    <g transform="translate(15, 42)">
+      <rect x="0" y="0" width="150" height="78" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+      <text x="10" y="20" font-size="11" font-weight="700" fill="#0f172a">LoginView.tsx</text>
+      <text x="10" y="36" font-size="9" fill="#64748b">• Portal editorial</text>
+      <text x="10" y="50" font-size="9" fill="#64748b">• Selección de cuentas</text>
+      <text x="10" y="64" font-size="9" fill="#64748b">• Sesión activa Diego/Pedro</text>
+    </g>
+
+    <g transform="translate(180, 42)">
+      <rect x="0" y="0" width="150" height="78" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+      <text x="10" y="20" font-size="11" font-weight="700" fill="#0f172a">Dashboard.tsx</text>
+      <text x="10" y="36" font-size="9" fill="#64748b">• Resumen de saldos</text>
+      <text x="10" y="50" font-size="9" fill="#64748b">• Cifras tabulares</text>
+      <text x="10" y="64" font-size="9" fill="#64748b">• Acciones inmediatas</text>
+    </g>
+
+    <g transform="translate(345, 42)">
+      <rect x="0" y="0" width="160" height="78" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+      <text x="10" y="20" font-size="11" font-weight="700" fill="#0f172a">BankCard3D.tsx</text>
+      <text x="10" y="36" font-size="9" fill="#64748b">• Perspectiva CSS 1200px</text>
+      <text x="10" y="50" font-size="9" fill="#64748b">• Reflejo especular táctil</text>
+      <text x="10" y="64" font-size="9" fill="#64748b">• Giro 180° reverso/CVV</text>
+    </g>
+
+    <g transform="translate(520, 42)">
+      <rect x="0" y="0" width="160" height="78" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+      <text x="10" y="20" font-size="11" font-weight="700" fill="#0f172a">TransferModal.tsx</text>
+      <text x="10" y="36" font-size="9" fill="#64748b">• Validación fondos en vivo</text>
+      <text x="10" y="50" font-size="9" fill="#64748b">• Selectores cuenta destino</text>
+      <text x="10" y="64" font-size="9" fill="#64748b">• Chips montos rápidos</text>
+    </g>
+
+    <g transform="translate(695, 42)">
+      <rect x="0" y="0" width="150" height="78" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+      <text x="10" y="20" font-size="11" font-weight="700" fill="#0f172a">ReceiptModal.tsx</text>
+      <text x="10" y="36" font-size="9" fill="#64748b">• Matriz QR escaneable</text>
+      <text x="10" y="50" font-size="9" fill="#059669" font-weight="600">• No Scrollbar (420px)</text>
+      <text x="10" y="64" font-size="9" fill="#64748b">• Impresión comprobante</text>
+    </g>
+
+    <g transform="translate(860, 42)">
+      <rect x="0" y="0" width="165" height="78" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+      <text x="10" y="20" font-size="11" font-weight="700" fill="#0f172a">bankApi.ts (Axios)</text>
+      <text x="10" y="36" font-size="9" fill="#64748b">• Base URL: /api</text>
+      <text x="10" y="50" font-size="9" fill="#64748b">• DTOs tipados TypeScript</text>
+      <text x="10" y="64" font-size="9" fill="#64748b">• Manejo limpio de errores</text>
+    </g>
+  </g>
+
+  <!-- Conector Capa 1 a Capa 2 -->
+  <path d="M 550 230 L 550 255" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="420" y="235" width="260" height="18" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="550" y="248" font-size="9.5" font-weight="600" fill="#334155" text-anchor="middle">HTTP/1.1 REST • JSON Payloads • CORS Activado</text>
+
+  <!-- CAPA 2: EXPOSICIÓN REST Y SEGURIDAD -->
+  <g transform="translate(30, 260)">
+    <rect x="0" y="0" width="1040" height="120" rx="10" fill="#f0f9ff" stroke="#bae6fd" stroke-width="1.5" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="1040" height="30" rx="10" fill="#e0f2fe"/>
+    <rect x="0" y="20" width="1040" height="10" fill="#e0f2fe"/>
+    <text x="16" y="20" font-size="12" font-weight="700" fill="#0369a1">CAPA 2: CONTROLADORES REST Y GATEWAY DE EXPOSICIÓN</text>
+    <text x="760" y="20" font-size="11" font-weight="600" fill="#0284c7">Spring Boot 4.1.2 • Spring MVC • Puerto 8080</text>
+
+    <!-- Componentes Capa 2 -->
+    <g transform="translate(20, 42)">
+      <rect x="0" y="0" width="180" height="65" rx="6" fill="#ffffff" stroke="#bae6fd" stroke-width="1"/>
+      <text x="10" y="18" font-size="11" font-weight="700" fill="#0f172a">AccountController</text>
+      <text x="10" y="34" font-size="9" font-family="monospace" fill="#0284c7">GET /api/accounts</text>
+      <text x="10" y="48" font-size="9" font-family="monospace" fill="#0284c7">GET /api/accounts/{num}</text>
+    </g>
+
+    <g transform="translate(225, 42)">
+      <rect x="0" y="0" width="190" height="65" rx="6" fill="#ffffff" stroke="#bae6fd" stroke-width="1"/>
+      <text x="10" y="18" font-size="11" font-weight="700" fill="#0f172a">TransferController</text>
+      <text x="10" y="34" font-size="9" font-family="monospace" fill="#0284c7">POST /api/transfers</text>
+      <text x="10" y="48" font-size="8.5" fill="#64748b">Consume: TransferRequest Record</text>
+    </g>
+
+    <g transform="translate(440, 42)">
+      <rect x="0" y="0" width="190" height="65" rx="6" fill="#ffffff" stroke="#bae6fd" stroke-width="1"/>
+      <text x="10" y="18" font-size="11" font-weight="700" fill="#0f172a">TransactionController</text>
+      <text x="10" y="34" font-size="9" font-family="monospace" fill="#0284c7">GET /api/accounts/{num}/txns</text>
+      <text x="10" y="48" font-size="8.5" fill="#64748b">Retorna lista ordenada cronológica</text>
+    </g>
+
+    <g transform="translate(655, 42)">
+      <rect x="0" y="0" width="170" height="65" rx="6" fill="#ffffff" stroke="#bae6fd" stroke-width="1"/>
+      <text x="10" y="18" font-size="11" font-weight="700" fill="#0f172a">CorsConfig &amp; OpenAPI</text>
+      <text x="10" y="34" font-size="9" fill="#64748b">• Orígenes: localhost:5173</text>
+      <text x="10" y="48" font-size="9" fill="#64748b">• Swagger UI: /swagger-ui.html</text>
+    </g>
+
+    <g transform="translate(845, 42)">
+      <rect x="0" y="0" width="175" height="65" rx="6" fill="#ffffff" stroke="#bae6fd" stroke-width="1"/>
+      <text x="10" y="18" font-size="11" font-weight="700" fill="#0f172a">GlobalExceptionHandler</text>
+      <text x="10" y="34" font-size="9" fill="#b91c1c">• InsufficientFunds &rarr; 400</text>
+      <text x="10" y="48" font-size="9" fill="#b91c1c">• AccountNotFound &rarr; 404</text>
+    </g>
+  </g>
+
+  <!-- Conector Capa 2 a Capa 3 -->
+  <path d="M 550 380 L 550 405" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="425" y="385" width="250" height="18" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="550" y="398" font-size="9.5" font-weight="600" fill="#334155" text-anchor="middle">Inyección de Dependencias (@Autowired / IoC)</text>
+
+  <!-- CAPA 3: SERVICIOS Y REGLAS DE NEGOCIO -->
+  <g transform="translate(30, 410)">
+    <rect x="0" y="0" width="1040" height="130" rx="10" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1.5" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="1040" height="30" rx="10" fill="#d1fae5"/>
+    <rect x="0" y="20" width="1040" height="10" fill="#d1fae5"/>
+    <text x="16" y="20" font-size="12" font-weight="700" fill="#047857">CAPA 3: LÓGICA DE NEGOCIO Y CONTROL TRANSACCIONAL ATÓMICO (ACID)</text>
+    <text x="750" y="20" font-size="11" font-weight="600" fill="#059669">Java 25 LTS • Spring Boot 4 • Google ZXing 3.5.3</text>
+
+    <!-- Componentes Capa 3 -->
+    <g transform="translate(25, 42)">
+      <rect x="0" y="0" width="480" height="75" rx="6" fill="#ffffff" stroke="#a7f3d0" stroke-width="1"/>
+      <text x="15" y="20" font-size="11" font-weight="700" fill="#0f172a">TransferService.java (@Service • @Transactional)</text>
+      <text x="15" y="36" font-size="9.5" fill="#334155">1. Bloqueo y validación de cuentas origen y destino (no duplicidad, existencia).</text>
+      <text x="15" y="50" font-size="9.5" fill="#334155">2. Verificación de saldo con precisión BigDecimal (compareTo &gt;= 0).</text>
+      <text x="15" y="64" font-size="9.5" fill="#059669" font-weight="600">3. Débito y Crédito simultáneo en memoria y confirmación atómica en BD.</text>
+    </g>
+
+    <g transform="translate(535, 42)">
+      <rect x="0" y="0" width="480" height="75" rx="6" fill="#ffffff" stroke="#a7f3d0" stroke-width="1"/>
+      <text x="15" y="20" font-size="11" font-weight="700" fill="#0f172a">QrCodeService.java (Google ZXing QRCodeWriter)</text>
+      <text x="15" y="36" font-size="9.5" fill="#334155">1. Construye payload plano con metadatos: ID, cuentas, monto y timestamp ISO.</text>
+      <text x="15" y="50" font-size="9.5" fill="#334155">2. Codifica matriz bidimensional de 250×250 píxeles con corrección de error M.</text>
+      <text x="15" y="64" font-size="9.5" fill="#059669" font-weight="600">3. Convierte el flujo de bytes a Data URI Base64 PNG (data:image/png;base64,...).</text>
+    </g>
+  </g>
+
+  <!-- Conector Capa 3 a Capa 4 -->
+  <path d="M 550 540 L 550 565" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="430" y="545" width="240" height="18" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="550" y="558" font-size="9.5" font-weight="600" fill="#334155" text-anchor="middle">Spring Data JPA • Mapeo Objeto-Relacional</text>
+
+  <!-- CAPA 4: PERSISTENCIA Y MODELO ENTIDAD-RELACIÓN -->
+  <g transform="translate(30, 570)">
+    <rect x="0" y="0" width="1040" height="115" rx="10" fill="#fdf4ff" stroke="#f0abfc" stroke-width="1.5" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="1040" height="30" rx="10" fill="#fae8ff"/>
+    <rect x="0" y="20" width="1040" height="10" fill="#fae8ff"/>
+    <text x="16" y="20" font-size="12" font-weight="700" fill="#a21caf">CAPA 4: REPOSITORIOS SPRING DATA JPA Y MODELO DE ENTIDADES</text>
+    <text x="760" y="20" font-size="11" font-weight="600" fill="#c026d3">Hibernate ORM 6.6 • PostgreSQL Dialect</text>
+
+    <!-- Componentes Capa 4 -->
+    <g transform="translate(30, 42)">
+      <rect x="0" y="0" width="220" height="60" rx="6" fill="#ffffff" stroke="#f0abfc" stroke-width="1"/>
+      <text x="12" y="20" font-size="11" font-weight="700" fill="#0f172a">AccountRepository</text>
+      <text x="12" y="36" font-size="9" fill="#64748b">extends JpaRepository&lt;Account, Long&gt;</text>
+      <text x="12" y="48" font-size="8.5" font-family="monospace" fill="#a21caf">findByAccountNumber(String)</text>
+    </g>
+
+    <g transform="translate(280, 42)">
+      <rect x="0" y="0" width="220" height="60" rx="6" fill="#ffffff" stroke="#f0abfc" stroke-width="1"/>
+      <text x="12" y="20" font-size="11" font-weight="700" fill="#0f172a">TransactionRepository</text>
+      <text x="12" y="36" font-size="9" fill="#64748b">extends JpaRepository&lt;Txn, Long&gt;</text>
+      <text x="12" y="48" font-size="8.5" font-family="monospace" fill="#a21caf">findBySourceOrDestOrderByDateDesc</text>
+    </g>
+
+    <g transform="translate(530, 42)">
+      <rect x="0" y="0" width="230" height="60" rx="6" fill="#ffffff" stroke="#f0abfc" stroke-width="1"/>
+      <text x="12" y="20" font-size="11" font-weight="700" fill="#0f172a">Entidad Account (@Entity)</text>
+      <text x="12" y="36" font-size="9" fill="#64748b">Mapea tabla 'accounts'</text>
+      <text x="12" y="48" font-size="8.5" fill="#334155">Campos: id, balance, holderName, type</text>
+    </g>
+
+    <g transform="translate(790, 42)">
+      <rect x="0" y="0" width="220" height="60" rx="6" fill="#ffffff" stroke="#f0abfc" stroke-width="1"/>
+      <text x="12" y="20" font-size="11" font-weight="700" fill="#0f172a">Entidad Transaction (@Entity)</text>
+      <text x="12" y="36" font-size="9" fill="#64748b">Mapea tabla 'transactions'</text>
+      <text x="12" y="48" font-size="8.5" fill="#334155">Campos: transactionId, amount, qrPayload</text>
+    </g>
+  </g>
+
+  <!-- Conector Capa 4 a Capa 5 -->
+  <path d="M 550 685 L 550 710" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="440" y="690" width="220" height="18" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="550" y="703" font-size="9.5" font-weight="600" fill="#334155" text-anchor="middle">Driver JDBC PostgreSQL (TCP:5432)</text>
+
+  <!-- CAPA 5: MOTOR DE BASE DE DATOS -->
+  <g transform="translate(30, 715)">
+    <rect x="0" y="0" width="1040" height="120" rx="10" fill="#fffbeb" stroke="#fde68a" stroke-width="1.5" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="1040" height="30" rx="10" fill="#fef3c7"/>
+    <rect x="0" y="20" width="1040" height="10" fill="#fef3c7"/>
+    <text x="16" y="20" font-size="12" font-weight="700" fill="#b45309">CAPA 5: MOTOR DE BASE DE DATOS RELACIONAL PERSISTENTE</text>
+    <text x="730" y="20" font-size="11" font-weight="600" fill="#d97706">PostgreSQL 18 • Base de datos: bankdb • Puerto 5432</text>
+
+    <!-- Componentes Capa 5 -->
+    <g transform="translate(40, 42)">
+      <rect x="0" y="0" width="460" height="65" rx="6" fill="#ffffff" stroke="#fde68a" stroke-width="1"/>
+      <text x="15" y="18" font-size="11" font-weight="700" fill="#0f172a">Tabla 'accounts' (Entidades Bancarias)</text>
+      <text x="15" y="34" font-size="9" font-family="monospace" fill="#334155">id BIGSERIAL PRIMARY KEY, account_number VARCHAR(30) UNIQUE</text>
+      <text x="15" y="48" font-size="9" font-family="monospace" fill="#b45309">balance NUMERIC(15,2) NOT NULL, holder_name VARCHAR(100)</text>
+    </g>
+
+    <g transform="translate(540, 42)">
+      <rect x="0" y="0" width="460" height="65" rx="6" fill="#ffffff" stroke="#fde68a" stroke-width="1"/>
+      <text x="15" y="18" font-size="11" font-weight="700" fill="#0f172a">Tabla 'transactions' (Ledger Inmutable de Auditoría)</text>
+      <text x="15" y="34" font-size="9" font-family="monospace" fill="#334155">id BIGSERIAL PRIMARY KEY, transaction_id VARCHAR(64) UNIQUE</text>
+      <text x="15" y="48" font-size="9" font-family="monospace" fill="#b45309">amount NUMERIC(15,2), qr_payload TEXT, timestamp TIMESTAMP</text>
+    </g>
+  </g>
+</svg>

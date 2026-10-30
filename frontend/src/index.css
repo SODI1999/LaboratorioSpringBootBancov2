@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-canvas text-ink min-h-screen overflow-x-hidden antialiased selection:bg-stone-200 selection:text-ink-pure;
+  }
+}
+
+/* 3D Perspective and Card Physics */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.perspective-1200 {
+  perspective: 1200px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Fallback for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .card-3d-tilt {
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/* Tabular figures for monetary values and card numbers */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Subtle receipt jagged borders */
+.zigzag-border {
+  background: radial-gradient(circle, transparent, transparent 50%, #fff 50%, #fff 100% );
+  background-size: 10px 10px;
+}

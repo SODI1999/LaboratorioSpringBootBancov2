@@ -1,0 +1,24 @@
+{
+  "id": "stack-frontend",
+  "topic": "technology",
+  "status": "approved",
+  "value": "React + Vite + TypeScript + Tailwind CSS + shadcn/ui (guiado por Better UI y accesibilidad)",
+  "basis": "El usuario aprobó explícitamente React con Vite, TypeScript, Tailwind, ShadcnUI y diseño guiado por Better el 2026-10-30.",
+  "required": true,
+  "sources": [
+    {
+      "url": "https://vite.dev",
+      "consultedAt": "2026-10-30T21:38:00.000Z",
+      "appliesTo": "frontend",
+      "authority": "official"
+    },
+    {
+      "url": "https://react.dev",
+      "consultedAt": "2026-10-30T21:38:00.000Z",
+      "appliesTo": "frontend",
+      "authority": "official"
+    }
+  ],
+  "recordedAt": "2026-10-30T21:38:28.447Z",
+  "revision": 1
+}

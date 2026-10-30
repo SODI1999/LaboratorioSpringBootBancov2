@@ -1,0 +1,364 @@
+{
+  "$schema": "./.omni/runtime/schema/manifest.schema.json",
+  "schemaVersion": 1,
+  "project": "LaboratorioSpringBootBancov2",
+  "version": "0.8.1",
+  "profile": "general",
+  "stack": "Unknown / existing project",
+  "documentationStandard": "Project conventions (review required)",
+  "qualityGates": "",
+  "agent": "antigravity",
+  "language": "es",
+  "active_spec": null,
+  "active_archetype": null,
+  "specs": [
+    {
+      "id": "001",
+      "type": "feature",
+      "slug": "001-bank-transfers-qr",
+      "title": "Bank Transfers Qr",
+      "status": "COMPLETED",
+      "created_at": "2026-10-30",
+      "branch": "feat/001-bank-transfers-qr",
+      "updated_at": "2026-10-30T22:38:27.301Z",
+      "completed_at": "2026-10-30T22:38:27.301Z",
+      "verification": {
+        "mode": "automated",
+        "verifiedAt": "2026-10-30T22:38:13.722Z",
+        "fingerprint": "686e2e5c0001772299128843cf309628fd3d5f68eb44349d5af0d2870fea01a4",
+        "acceptance": {
+          "criteria": [
+            {
+              "id": "AC-01",
+              "status": "passed",
+              "method": "automated",
+              "kind": "functional",
+              "checkIds": [
+                "backend-unit-test"
+              ],
+              "checks": [
+                {
+                  "checkId": "backend-unit-test",
+                  "command": ".\\mvnw.cmd -q test",
+                  "cwd": "backend",
+                  "status": "PASSED"
+                }
+              ],
+              "execution": "PASSED"
+            },
+            {
+              "id": "AC-02",
+              "status": "passed",
+              "method": "automated",
+              "kind": "functional",
+              "checkIds": [
+                "backend-unit-test"
+              ],
+              "checks": [
+                {
+                  "checkId": "backend-unit-test",
+                  "command": ".\\mvnw.cmd -q test",
+                  "cwd": "backend",
+                  "status": "PASSED"
+                }
+              ],
+              "execution": "PASSED"
+            },
+            {
+              "id": "AC-03",
+              "status": "passed",
+              "method": "automated",
+              "kind": "functional",
+              "checkIds": [
+                "backend-unit-test"
+              ],
+              "checks": [
+                {
+                  "checkId": "backend-unit-test",
+                  "command": ".\\mvnw.cmd -q test",
+                  "cwd": "backend",
+                  "status": "PASSED"
+                }
+              ],
+              "execution": "PASSED"
+            },
+            {
+              "id": "AC-04",
+              "status": "passed",
+              "method": "automated",
+              "kind": "functional",
+              "checkIds": [
+                "backend-unit-test"
+              ],
+              "checks": [
+                {
+                  "checkId": "backend-unit-test",
+                  "command": ".\\mvnw.cmd -q test",
+                  "cwd": "backend",
+                  "status": "PASSED"
+                }
+              ],
+              "execution": "PASSED"
+            },
+            {
+              "id": "AC-05",
+              "status": "passed",
+              "method": "automated",
+              "kind": "functional",
+              "checkIds": [
+                "backend-unit-test"
+              ],
+              "checks": [
+                {
+                  "checkId": "backend-unit-test",
+                  "command": ".\\mvnw.cmd -q test",
+                  "cwd": "backend",
+                  "status": "PASSED"
+                }
+              ],
+              "execution": "PASSED"
+            },
+            {
+              "id": "AC-06",
+              "status": "passed",
+              "method": "automated",
+              "kind": "functional",
+              "checkIds": [
+                "backend-unit-test"
+              ],
+              "checks": [
+                {
+                  "checkId": "backend-unit-test",
+                  "command": ".\\mvnw.cmd -q test",
+                  "cwd": "backend",
+                  "status": "PASSED"
+                }
+              ],
+              "execution": "PASSED"
+            },
+            {
+              "id": "AC-07",
+              "status": "passed",
+              "method": "automated",
+              "kind": "functional",
+              "checkIds": [
+                "backend-unit-test"
+              ],
+              "checks": [
+                {
+                  "checkId": "backend-unit-test",
+                  "command": ".\\mvnw.cmd -q test",
+                  "cwd": "backend",
+                  "status": "PASSED"
+                }
+              ],
+              "execution": "PASSED"
+            },
+            {
+              "id": "AC-08",
+              "status": "passed",
+              "method": "automated",
+              "kind": "functional",
+              "checkIds": [
+                "backend-unit-test"
+              ],
+              "checks": [
+                {
+                  "checkId": "backend-unit-test",
+                  "command": ".\\mvnw.cmd -q test",
+                  "cwd": "backend",
+                  "status": "PASSED"
+                }
+              ],
+              "execution": "PASSED"
+            },
+            {
+              "id": "AC-09",
+              "status": "passed",
+              "method": "automated",
+              "kind": "functional",
+              "checkIds": [
+                "backend-unit-test"
+              ],
+              "checks": [
+                {
+                  "checkId": "backend-unit-test",
+                  "command": ".\\mvnw.cmd -q test",
+                  "cwd": "backend",
+                  "status": "PASSED"
+                }
+              ],
+              "execution": "PASSED"
+            },
+            {
+              "id": "AC-10",
+              "status": "passed",
+              "method": "manual",
+              "kind": "visual",
+              "observations": [
+                {
+                  "actor": "agent",
+                  "observer": "Antigravity Engineering Assistant",
+                  "sessionId": "71d1831a-36cd-4d98-8d84-ca6288b6487f",
+                  "surface": "/dashboard",
+                  "environment": "Chromium 130 via Chrome DevTools MCP, Vite preview en puerto 4173, Windows 11",
+                  "steps": [
+                    "Cargar Dashboard en puerto 4173 con loadingTransactions activo",
+                    "Inspeccionar nodos del DOM buscando clases animate-pulse",
+                    "Verificar reserva dimensional de 4 filas esqueléticas y altura fija"
+                  ],
+                  "expected": "Skeletons contextuales con reserva de altura y CLS = 0",
+                  "actual": "4 filas esqueléticas con animate-pulse renderizadas sin desplazamiento de layout",
+                  "result": "passed",
+                  "observedAt": "2026-10-30T22:34:35.000Z",
+                  "viewport": {
+                    "width": 1280,
+                    "height": 800
+                  },
+                  "artifact": "evidence/skeleton-loading.png"
+                }
+              ]
+            },
+            {
+              "id": "AC-11",
+              "status": "passed",
+              "method": "manual",
+              "kind": "visual",
+              "observations": [
+                {
+                  "actor": "agent",
+                  "observer": "Antigravity Engineering Assistant",
+                  "sessionId": "71d1831a-36cd-4d98-8d84-ca6288b6487f",
+                  "surface": "/dashboard",
+                  "environment": "Chromium 130 via Chrome DevTools MCP, Vite preview en puerto 4173, Windows 11",
+                  "steps": [
+                    "Iniciar sesión como Diego Ramírez con 0 movimientos previos",
+                    "Verificar contenedor de historial de transacciones",
+                    "Comprobar icono, texto descriptivo y botón CTA 'Realizar Primera Transferencia'"
+                  ],
+                  "expected": "Empty state ilustrado con copy claro y botón de acción directa",
+                  "actual": "Empty state visual renderizado con botón interactivo para abrir modal de transferencia",
+                  "result": "passed",
+                  "observedAt": "2026-10-30T22:32:00.000Z",
+                  "viewport": {
+                    "width": 1280,
+                    "height": 800
+                  },
+                  "artifact": "evidence/empty-state.png"
+                }
+              ]
+            },
+            {
+              "id": "AC-12",
+              "status": "passed",
+              "method": "manual",
+              "kind": "interaction",
+              "observations": [
+                {
+                  "actor": "agent",
+                  "observer": "Antigravity Engineering Assistant",
+                  "sessionId": "71d1831a-36cd-4d98-8d84-ca6288b6487f",
+                  "surface": "/dashboard/receipt",
+                  "environment": "Chromium 130 via Chrome DevTools MCP, Vite preview en puerto 4173, Windows 11",
+                  "steps": [
+                    "Ejecutar transferencia de $150.000 COP desde Diego hacia Pedro Gómez",
+                    "Verificar apertura automática de modal de comprobante con código QR renderizado",
+                    "Comprobar desglose de montos, saldos actualizados y botón para copiar UUID"
+                  ],
+                  "expected": "Comprobante modal con imagen QR Base64 legible y saldo actualizado a $1.350.000",
+                  "actual": "Comprobante renderizado con QR escaneable en Base64, UUID 2381936f-fc3d y nuevo saldo",
+                  "result": "passed",
+                  "observedAt": "2026-10-30T22:33:14.000Z",
+                  "artifact": "evidence/receipt-qr-modal.png"
+                }
+              ]
+            },
+            {
+              "id": "AC-13",
+              "status": "passed",
+              "method": "manual",
+              "kind": "interaction",
+              "observations": [
+                {
+                  "actor": "agent",
+                  "observer": "Antigravity Engineering Assistant",
+                  "sessionId": "71d1831a-36cd-4d98-8d84-ca6288b6487f",
+                  "surface": "/dashboard/transfer",
+                  "environment": "Chromium 130 via Chrome DevTools MCP, Vite preview en puerto 4173, Windows 11",
+                  "steps": [
+                    "Abrir diálogo de transferencia",
+                    "Ingresar monto de $5.000.000 COP excediendo el saldo disponible de $1.500.000",
+                    "Comprobar mensaje inline de advertencia 'Saldo insuficiente para este monto' y bloqueo de envío"
+                  ],
+                  "expected": "Alerta contextual inmediata de fondos insuficientes sin recargar ni limpiar formulario",
+                  "actual": "Mensaje inline 'Saldo insuficiente para este monto' visible y botón deshabilitado",
+                  "result": "passed",
+                  "observedAt": "2026-10-30T22:32:35.000Z",
+                  "artifact": "evidence/error-validation.png"
+                }
+              ]
+            },
+            {
+              "id": "AC-14",
+              "status": "passed",
+              "method": "manual",
+              "kind": "interaction",
+              "observations": [
+                {
+                  "actor": "agent",
+                  "observer": "Antigravity Engineering Assistant",
+                  "sessionId": "71d1831a-36cd-4d98-8d84-ca6288b6487f",
+                  "surface": "/login",
+                  "environment": "Chromium 130 via Chrome DevTools MCP, Vite preview en puerto 4173, Windows 11",
+                  "steps": [
+                    "Navegar a http://127.0.0.1:4173/",
+                    "Verificar tarjetas de presentación bancaria de Diego, Pedro y María con sus saldos",
+                    "Hacer clic sobre la tarjeta de Diego Ramírez para ingresar a la plataforma"
+                  ],
+                  "expected": "Acceso institucional fluido y transición al Dashboard con datos del usuario",
+                  "actual": "Transición fluida a Dashboard con tarjeta de Diego, saldo en vivo e historial",
+                  "result": "passed",
+                  "observedAt": "2026-10-30T22:31:42.000Z",
+                  "artifact": "evidence/login-view.png"
+                }
+              ]
+            },
+            {
+              "id": "AC-15",
+              "status": "passed",
+              "method": "manual",
+              "kind": "visual",
+              "observations": [
+                {
+                  "actor": "agent",
+                  "observer": "Antigravity Engineering Assistant",
+                  "sessionId": "71d1831a-36cd-4d98-8d84-ca6288b6487f",
+                  "surface": "/dashboard/card",
+                  "environment": "Chromium 130 via Chrome DevTools MCP, Vite preview en puerto 4173, Windows 11",
+                  "steps": [
+                    "Inspeccionar elemento BankCard3D en el Dashboard",
+                    "Verificar clases CSS perspective-1000, preserve-3d y cálculo dinámico de tilt",
+                    "Comprobar chip EMV SVG, numeración 4532 •••• •••• 1001 y números tabulares",
+                    "Verificar regla @media motion-reduce:transform-none para accesibilidad"
+                  ],
+                  "expected": "Tarjeta física tridimensional con reflejo metálico y fallback estático accesible",
+                  "actual": "Tarjeta 3D renderizada con perspectiva de 1000px, chip vectorial y tipografía tabular",
+                  "result": "passed",
+                  "observedAt": "2026-10-30T22:32:00.000Z",
+                  "viewport": {
+                    "width": 1280,
+                    "height": 800
+                  },
+                  "artifact": "evidence/card3d.png"
+                }
+              ]
+            }
+          ],
+          "scope": "DECLARED_EVIDENCE_WITH_EXECUTED_CHECK_BINDINGS",
+          "truthOfEvidence": "AGENT_OR_HUMAN_REVIEW_REQUIRED",
+          "automatedChecksPassed": true
+        }
+      }
+    }
+  ]
+}

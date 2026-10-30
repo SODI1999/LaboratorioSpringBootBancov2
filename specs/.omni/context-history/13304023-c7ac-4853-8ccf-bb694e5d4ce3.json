@@ -1,0 +1,23 @@
+{
+  "recordedAt": "2026-10-30T22:17:49.204Z",
+  "scope": "CONTEXT_INPUTS_V3",
+  "inputs": {
+    "AGENTS.md": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "CONSTITUTION.md": "2417d3e61ebcd826e0af5701e0eb587af4c2684820aa6453843176d24ce6be4a",
+    "PROMPTS.md": "81fff0acff3cc788ca262f806f31a54962e7f5b66064ab00ce698fe459aab196",
+    "README.md": "6ead9fcab8c4ad952abaff5a50ab2e53b06b7c2678f151dd7184dfaa349e7a89",
+    "SpringBoot AI.pdf": "b015065ddc5a4c20405cff6c30eb9cb8aad5df4d945fd1f1af2a601b4c60cbdd",
+    "frontend/package.json": "e8661f668bc7d71061cbed614a5b9621895a6c212e6e965b3839b233e6edd0d2",
+    "frontend/postcss.config.js": "e32657baf631d7c5f4dc67b4b2ee0ec8e7d5b3c41860e09cddce7c0377cd80bc",
+    "frontend/tailwind.config.js": "2e708377636ffb7c965254104c5c16d22661355ac2cfdefd638d93a1ef6e1030",
+    "frontend/tsconfig.json": "3dbbde6e820d93d3bc05d0c54de9aba50d39b9e7fb6b736713a60a2edf5a17af",
+    "frontend/vite.config.ts": "566f79187342485d814f305a91ad2198f245bdcd6352ab397f029f46cda4f46d",
+    "pom.xml": "c3d3a79de128f558b150c14eb2ba3f0d8fde499f8fefd7100365519292eff666",
+    "specs/001-bank-transfers-qr/spec.md": "b7740fefd0b0971b2d6a1e2d1b7acf2d0e78a23738197e618fef01ad3232870a",
+    "specs/001-bank-transfers-qr/plan.md": "17e665e5227957a8715bee6b9e835e6707e75340fefc6f6249b89067ed6a4ee4",
+    "specs/001-bank-transfers-qr/tasks.md": "7bb2ddfbc503386faff2ed7b2e730db19f0ce8739045b9a09cd61cdaa5894d82",
+    "specs/project-context.md": "50033ddf74092652adcd2d6f33989a71c18f98e24dd8404f1ef45b5d973932f8"
+  },
+  "reviewScope": "EOL_NORMALIZED_BASELINE_AND_STRUCTURAL_LINKS_ONLY",
+  "semanticReview": "AGENT_OR_HUMAN_REQUIRED"
+}

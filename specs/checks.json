@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "checks": [
+    {
+      "id": "backend-unit-test",
+      "command": ".\\mvnw.cmd -q test",
+      "cwd": "backend",
+      "timeoutMs": 600000
+    },
+    {
+      "id": "frontend-build",
+      "command": "npm run build",
+      "cwd": "frontend",
+      "timeoutMs": 300000
+    }
+  ]
+}

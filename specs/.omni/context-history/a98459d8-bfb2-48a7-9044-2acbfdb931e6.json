@@ -1,0 +1,11 @@
+{
+  "recordedAt": "2026-10-30T21:29:39.107Z",
+  "scope": "CONTEXT_INPUTS_V3",
+  "inputs": {
+    "AGENTS.md": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "CONSTITUTION.md": "2417d3e61ebcd826e0af5701e0eb587af4c2684820aa6453843176d24ce6be4a",
+    "specs/project-context.md": "bbab0ab5ba8aa0c09314ec0f8eb6fedd97ae0943161328ad0ef48dd0f2abcdd8"
+  },
+  "reviewScope": "EOL_NORMALIZED_BASELINE_AND_STRUCTURAL_LINKS_ONLY",
+  "semanticReview": "AGENT_OR_HUMAN_REQUIRED"
+}

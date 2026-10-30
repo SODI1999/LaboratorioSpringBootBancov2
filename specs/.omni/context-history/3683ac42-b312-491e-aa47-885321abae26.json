@@ -1,0 +1,12 @@
+{
+  "recordedAt": "2026-10-30T21:30:51.975Z",
+  "scope": "CONTEXT_INPUTS_V3",
+  "inputs": {
+    "AGENTS.md": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "CONSTITUTION.md": "2417d3e61ebcd826e0af5701e0eb587af4c2684820aa6453843176d24ce6be4a",
+    "SpringBoot AI.pdf": "b015065ddc5a4c20405cff6c30eb9cb8aad5df4d945fd1f1af2a601b4c60cbdd",
+    "specs/project-context.md": "72b99d11f1e0b75a356f1de6166316791ae601d56511e890c5f1cbd14d6f58f1"
+  },
+  "reviewScope": "EOL_NORMALIZED_BASELINE_AND_STRUCTURAL_LINKS_ONLY",
+  "semanticReview": "AGENT_OR_HUMAN_REQUIRED"
+}

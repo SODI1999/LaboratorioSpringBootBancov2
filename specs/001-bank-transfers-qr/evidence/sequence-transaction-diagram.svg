@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 820" width="100%" height="100%" style="background:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <filter id="shadow-seq" x="-4%" y="-2%" width="108%" height="108%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.05"/>
+    </filter>
+    <marker id="arr-seq" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#334155"/>
+    </marker>
+    <marker id="arr-red" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#dc2626"/>
+    </marker>
+    <marker id="arr-green" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#059669"/>
+    </marker>
+  </defs>
+
+  <!-- Header -->
+  <rect x="30" y="20" width="1040" height="50" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="50" y="44" font-size="15" font-weight="700" fill="#0f172a">DIAGRAMA DE SECUENCIA UML: TRASLADO ATÓMICO Y EMISIÓN DE CÓDIGO QR</text>
+  <text x="50" y="60" font-size="11" font-weight="500" fill="#64748b">Flujo de Ejecución, Aislamiento Transaccional ACID y Generación de Comprobante Fiscal</text>
+  <rect x="910" y="32" width="145" height="26" rx="4" fill="#0f172a"/>
+  <text x="982" y="49" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">TRANSACCIÓN ATÓMICA</text>
+
+  <!-- Lifeline Headers -->
+  <g transform="translate(0, 85)">
+    <!-- 1. Usuario -->
+    <rect x="35" y="0" width="95" height="36" rx="6" fill="#0f172a"/>
+    <text x="82" y="22" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">Usuario / Cliente</text>
+    <line x1="82" y1="36" x2="82" y2="700" stroke="#94a3b8" stroke-dasharray="4 4" stroke-width="1.5"/>
+
+    <!-- 2. Frontend TransferModal -->
+    <rect x="150" y="0" width="125" height="36" rx="6" fill="#3b82f6"/>
+    <text x="212" y="22" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">TransferModal.tsx</text>
+    <line x1="212" y1="36" x2="212" y2="700" stroke="#94a3b8" stroke-dasharray="4 4" stroke-width="1.5"/>
+
+    <!-- 3. TransferController -->
+    <rect x="295" y="0" width="130" height="36" rx="6" fill="#0284c7"/>
+    <text x="360" y="22" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">TransferController</text>
+    <line x1="360" y1="36" x2="360" y2="700" stroke="#94a3b8" stroke-dasharray="4 4" stroke-width="1.5"/>
+
+    <!-- 4. TransferService -->
+    <rect x="445" y="0" width="140" height="36" rx="6" fill="#059669"/>
+    <text x="515" y="22" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">TransferService (@Tx)</text>
+    <line x1="515" y1="36" x2="515" y2="700" stroke="#94a3b8" stroke-dasharray="4 4" stroke-width="1.5"/>
+
+    <!-- 5. AccountRepository -->
+    <rect x="605" y="0" width="135" height="36" rx="6" fill="#a21caf"/>
+    <text x="672" y="22" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">AccountRepository</text>
+    <line x1="672" y1="36" x2="672" y2="700" stroke="#94a3b8" stroke-dasharray="4 4" stroke-width="1.5"/>
+
+    <!-- 6. PostgreSQL -->
+    <rect x="760" y="0" width="115" height="36" rx="6" fill="#b45309"/>
+    <text x="817" y="22" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">PostgreSQL 18</text>
+    <line x1="817" y1="36" x2="817" y2="700" stroke="#94a3b8" stroke-dasharray="4 4" stroke-width="1.5"/>
+
+    <!-- 7. QrCodeService -->
+    <rect x="895" y="0" width="120" height="36" rx="6" fill="#0d9488"/>
+    <text x="955" y="22" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">QrCodeService (ZXing)</text>
+    <line x1="955" y1="36" x2="955" y2="700" stroke="#94a3b8" stroke-dasharray="4 4" stroke-width="1.5"/>
+
+    <!-- 8. ReceiptModal -->
+    <rect x="1030" y="0" width="60" height="36" rx="6" fill="#334155"/>
+    <text x="1060" y="22" font-size="9" font-weight="700" fill="#ffffff" text-anchor="middle">Receipt</text>
+    <line x1="1060" y1="36" x2="1060" y2="700" stroke="#94a3b8" stroke-dasharray="4 4" stroke-width="1.5"/>
+  </g>
+
+  <!-- Sequence Messages -->
+  <g transform="translate(0, 130)">
+    <!-- 1. Input -->
+    <line x1="82" y1="20" x2="212" y2="20" stroke="#334155" stroke-width="1.5" marker-end="url(#arr-seq)"/>
+    <text x="147" y="14" font-size="9" font-weight="600" fill="#334155" text-anchor="middle">1. Ingresa monto y destino</text>
+
+    <!-- 2. Live Validation -->
+    <rect x="207" y="25" width="10" height="20" fill="#bfdbfe"/>
+    <path d="M 217 35 Q 240 35 240 45 Q 240 55 217 55" fill="none" stroke="#2563eb" stroke-width="1.2" marker-end="url(#arr-seq)"/>
+    <text x="250" y="47" font-size="8.5" fill="#1e40af">Validación reactiva saldo</text>
+
+    <!-- 3. HTTP POST -->
+    <line x1="212" y1="70" x2="360" y2="70" stroke="#334155" stroke-width="1.5" marker-end="url(#arr-seq)"/>
+    <text x="286" y="64" font-size="9" font-weight="600" fill="#334155" text-anchor="middle">2. POST /api/transfers (TransferRequest)</text>
+
+    <!-- 4. Delegate to Service -->
+    <line x1="360" y1="95" x2="515" y2="95" stroke="#334155" stroke-width="1.5" marker-end="url(#arr-seq)"/>
+    <text x="437" y="89" font-size="9" font-weight="600" fill="#334155" text-anchor="middle">3. transferFunds(request)</text>
+
+    <!-- 5. Begin Transaction -->
+    <rect x="500" y="105" width="30" height="20" rx="3" fill="#ecfdf5" stroke="#059669" stroke-width="1"/>
+    <text x="515" y="119" font-size="8" font-weight="700" fill="#047857" text-anchor="middle">@Tx</text>
+
+    <!-- 6. Query Accounts -->
+    <line x1="515" y1="135" x2="672" y2="135" stroke="#334155" stroke-width="1.5" marker-end="url(#arr-seq)"/>
+    <text x="593" y="129" font-size="9" font-weight="600" fill="#334155" text-anchor="middle">4. findByAccountNumber()</text>
+
+    <line x1="672" y1="150" x2="817" y2="150" stroke="#334155" stroke-width="1.5" marker-end="url(#arr-seq)"/>
+    <text x="744" y="144" font-size="8.5" fill="#475569" text-anchor="middle">SQL SELECT FROM accounts</text>
+
+    <line x1="817" y1="170" x2="672" y2="170" stroke="#475569" stroke-dasharray="3 3" stroke-width="1.5" marker-end="url(#arr-seq)"/>
+    <text x="744" y="165" font-size="8" fill="#475569" text-anchor="middle">Entidades Account</text>
+
+    <line x1="672" y1="185" x2="515" y2="185" stroke="#475569" stroke-dasharray="3 3" stroke-width="1.5" marker-end="url(#arr-seq)"/>
+    <text x="593" y="180" font-size="8" fill="#475569" text-anchor="middle">source &amp; destination</text>
+
+    <!-- ALT FRAME: VERIFICACIÓN DE FONDOS -->
+    <rect x="65" y="210" width="970" height="420" rx="8" fill="#fafafa" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="6 3"/>
+    <rect x="65" y="210" width="160" height="24" rx="4" fill="#64748b"/>
+    <text x="75" y="226" font-size="10" font-weight="700" fill="#ffffff">alt: Verificación de Fondos</text>
+
+    <!-- [Caso A: Fondos Insuficientes] -->
+    <text x="80" y="250" font-size="10" font-weight="700" fill="#b91c1c">[CASO A: Saldo Insuficiente (source.balance &lt; amount)]</text>
+
+    <path d="M 515 260 L 515 275" stroke="#dc2626" stroke-width="1.5"/>
+    <line x1="515" y1="275" x2="360" y2="275" stroke="#dc2626" stroke-dasharray="3 3" stroke-width="1.5" marker-end="url(#arr-red)"/>
+    <text x="437" y="270" font-size="8.5" font-weight="600" fill="#b91c1c" text-anchor="middle">Lanza InsufficientFundsException (Rollback @Tx)</text>
+
+    <line x1="360" y1="295" x2="212" y2="295" stroke="#dc2626" stroke-dasharray="3 3" stroke-width="1.5" marker-end="url(#arr-red)"/>
+    <text x="286" y="290" font-size="8.5" font-weight="600" fill="#b91c1c" text-anchor="middle">HTTP 400 Bad Request + ErrorResponse JSON</text>
+
+    <line x1="212" y1="315" x2="82" y2="315" stroke="#dc2626" stroke-dasharray="3 3" stroke-width="1.5" marker-end="url(#arr-red)"/>
+    <text x="147" y="310" font-size="8.5" fill="#b91c1c" text-anchor="middle">Muestra alerta: "Saldo insuficiente"</text>
+
+    <!-- Divisor Alt -->
+    <line x1="65" y1="335" x2="1035" y2="335" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <text x="80" y="352" font-size="10" font-weight="700" fill="#047857">[CASO B: Fondos Suficientes (source.balance &gt;= amount)]</text>
+
+    <!-- Débito y Crédito -->
+    <rect x="510" y="360" width="10" height="30" fill="#a7f3d0"/>
+    <text x="525" y="375" font-size="8.5" fill="#065f46">source.debit(amount)</text>
+    <text x="525" y="388" font-size="8.5" fill="#065f46">destination.credit(amount)</text>
+
+    <!-- Persistencia en BD -->
+    <line x1="515" y1="410" x2="672" y2="410" stroke="#334155" stroke-width="1.5" marker-end="url(#arr-seq)"/>
+    <text x="593" y="404" font-size="8.5" fill="#334155" text-anchor="middle">saveAll([source, dest])</text>
+
+    <line x1="672" y1="425" x2="817" y2="425" stroke="#334155" stroke-width="1.5" marker-end="url(#arr-seq)"/>
+    <text x="744" y="419" font-size="8" fill="#475569" text-anchor="middle">SQL UPDATE accounts (2 registros)</text>
+
+    <!-- Generación QR con ZXing -->
+    <line x1="515" y1="450" x2="955" y2="450" stroke="#0d9488" stroke-width="1.5" marker-end="url(#arr-green)"/>
+    <text x="735" y="444" font-size="9" font-weight="600" fill="#0f766e" text-anchor="middle">generateQrCode(txnId, src, dst, amount, timestamp)</text>
+
+    <rect x="950" y="455" width="10" height="25" fill="#99f6e4"/>
+    <text x="965" y="470" font-size="8" fill="#115e59">ZXing sintetiza matriz 250×250</text>
+
+    <line x1="955" y1="485" x2="515" y2="485" stroke="#0d9488" stroke-dasharray="3 3" stroke-width="1.5" marker-end="url(#arr-green)"/>
+    <text x="735" y="480" font-size="8.5" font-weight="600" fill="#0f766e" text-anchor="middle">Retorna Data URI (data:image/png;base64,...)</text>
+
+    <!-- Registro en Ledger -->
+    <line x1="515" y1="510" x2="817" y2="510" stroke="#334155" stroke-width="1.5" marker-end="url(#arr-seq)"/>
+    <text x="666" y="504" font-size="8.5" fill="#334155" text-anchor="middle">SQL INSERT INTO transactions (UUID, QR, Timestamp)</text>
+
+    <!-- Confirmación Atómica -->
+    <rect x="500" y="525" width="30" height="20" rx="3" fill="#dcfce7" stroke="#16a34a" stroke-width="1"/>
+    <text x="515" y="539" font-size="8" font-weight="700" fill="#15803d" text-anchor="middle">COMMIT</text>
+
+    <!-- Retorno DTO -->
+    <line x1="515" y1="555" x2="360" y2="555" stroke="#059669" stroke-dasharray="3 3" stroke-width="1.5" marker-end="url(#arr-green)"/>
+    <text x="437" y="550" font-size="8.5" font-weight="600" fill="#059669" text-anchor="middle">TransferResponse Record (Success)</text>
+
+    <line x1="360" y1="575" x2="212" y2="575" stroke="#059669" stroke-dasharray="3 3" stroke-width="1.5" marker-end="url(#arr-green)"/>
+    <text x="286" y="570" font-size="8.5" font-weight="600" fill="#059669" text-anchor="middle">HTTP 200 OK + Payload JSON</text>
+
+    <!-- Abrir Comprobante QR -->
+    <line x1="212" y1="595" x2="1060" y2="595" stroke="#0f172a" stroke-width="1.5" marker-end="url(#arr-seq)"/>
+    <text x="636" y="590" font-size="8.5" font-weight="600" fill="#0f172a" text-anchor="middle">Cierra modal formulario y abre ReceiptModal(receiptData)</text>
+
+    <line x1="1060" y1="615" x2="82" y2="615" stroke="#059669" stroke-width="1.5" marker-end="url(#arr-green)"/>
+    <text x="571" y="610" font-size="9" font-weight="700" fill="#059669" text-anchor="middle">Renderiza Comprobante Oficial con Código QR nítido (Sin Scrollbar / 100% visible)</text>
+  </g>
+</svg>

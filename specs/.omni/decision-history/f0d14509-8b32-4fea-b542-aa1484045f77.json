@@ -1,0 +1,24 @@
+{
+  "id": "stack-frontend",
+  "topic": "technology",
+  "status": "approved",
+  "value": "React + Vite + TypeScript + Tailwind CSS puro (artesanal anti-slop) + Lucide Icons + directrices Better UI/Accessibility (sin plantillas de shadcn)",
+  "basis": "El usuario acordó el 2026-10-30 un diseño artesanal sin plantillas prefabricadas, implementando tarjetas bancarias 3D y vista de login gobernadas por los estándares Better.",
+  "required": true,
+  "sources": [
+    {
+      "url": "https://vite.dev",
+      "consultedAt": "2026-10-30T21:54:00.000Z",
+      "appliesTo": "frontend",
+      "authority": "official"
+    },
+    {
+      "url": "https://tailwindcss.com",
+      "consultedAt": "2026-10-30T21:54:00.000Z",
+      "appliesTo": "frontend",
+      "authority": "official"
+    }
+  ],
+  "recordedAt": "2026-10-30T21:54:15.938Z",
+  "revision": 2
+}

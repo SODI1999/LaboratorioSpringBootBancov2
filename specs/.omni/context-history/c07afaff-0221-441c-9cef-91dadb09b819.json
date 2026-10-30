@@ -1,0 +1,15 @@
+{
+  "recordedAt": "2026-10-30T21:57:19.646Z",
+  "scope": "CONTEXT_INPUTS_V3",
+  "inputs": {
+    ".gitignore": "208197e46d42a4d39cc32a5aee7efea8279c6cdf4450c6e7986f9064719b7c22",
+    "AGENTS.md": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "CONSTITUTION.md": "2417d3e61ebcd826e0af5701e0eb587af4c2684820aa6453843176d24ce6be4a",
+    "SpringBoot AI.pdf": "b015065ddc5a4c20405cff6c30eb9cb8aad5df4d945fd1f1af2a601b4c60cbdd",
+    "specs/001-bank-transfers-qr/spec.md": "b7740fefd0b0971b2d6a1e2d1b7acf2d0e78a23738197e618fef01ad3232870a",
+    "specs/001-bank-transfers-qr/plan.md": "17e665e5227957a8715bee6b9e835e6707e75340fefc6f6249b89067ed6a4ee4",
+    "specs/project-context.md": "23bc20169b19e86818f1e30e5f4934c35d636c75b5c4e04323d333b895a52e33"
+  },
+  "reviewScope": "EOL_NORMALIZED_BASELINE_AND_STRUCTURAL_LINKS_ONLY",
+  "semanticReview": "AGENT_OR_HUMAN_REQUIRED"
+}

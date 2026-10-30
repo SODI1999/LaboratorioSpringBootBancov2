@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "context": {
+    "recordedAt": "2026-10-31T03:37:59.758Z",
+    "scope": "CONTEXT_INPUTS_V3",
+    "inputs": {
+      "AGENTS.md": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "CONSTITUTION.md": "2417d3e61ebcd826e0af5701e0eb587af4c2684820aa6453843176d24ce6be4a",
+      "PROMPTS.md": "c8befc9425fd04c024d17998c7740b831301007d7bfc0771dab21ae25ffb0364",
+      "README.md": "7f1710ec0e69d7ae89aa673b7aa9e9a9aad1534d5bd209e9df428e7f6658cca2",
+      "SpringBoot AI.pdf": "b015065ddc5a4c20405cff6c30eb9cb8aad5df4d945fd1f1af2a601b4c60cbdd",
+      "backend/pom.xml": "ec8ce28737157e8b7fff4083d071249611574beecfd1c13259b95a7b9d1890b5",
+      "frontend/package.json": "e8661f668bc7d71061cbed614a5b9621895a6c212e6e965b3839b233e6edd0d2",
+      "frontend/postcss.config.js": "e32657baf631d7c5f4dc67b4b2ee0ec8e7d5b3c41860e09cddce7c0377cd80bc",
+      "frontend/tailwind.config.js": "b26bb02b7bab7bb29dd0f688cfd18b8f406073417aa67c6c80703980767b5416",
+      "frontend/tsconfig.json": "3dbbde6e820d93d3bc05d0c54de9aba50d39b9e7fb6b736713a60a2edf5a17af",
+      "frontend/vite.config.ts": "566f79187342485d814f305a91ad2198f245bdcd6352ab397f029f46cda4f46d",
+      "specs/001-bank-transfers-qr/spec.md": "5b71dd9a203599b4446880e2567d5308470f70c1a395993519100b511a67af59",
+      "specs/001-bank-transfers-qr/plan.md": "cea4d59dabbd39cedc035ee0a61ac0d603b03a0606242ca655ed480152952c24",
+      "specs/001-bank-transfers-qr/tasks.md": "438b3d3dcc6aa8d0e15d51fdae9d99014475e3baf6d00c8637120ee48c540e8c",
+      "specs/project-context.md": "605887a688732751fb35610dab8e700d81757b77753d45b52bc3e7196190d3d3"
+    },
+    "reviewScope": "EOL_NORMALIZED_BASELINE_AND_STRUCTURAL_LINKS_ONLY",
+    "semanticReview": "AGENT_OR_HUMAN_REQUIRED"
+  },
+  "session": {
+    "id": "71d1831a-36cd-4d98-8d84-ca6288b6487f",
+    "host": "Antigravity",
+    "observedAt": "2026-10-30T21:28:59.862Z",
+    "recordedAt": "2026-10-30T21:28:59.869Z",
+    "capabilities": {
+      "questions": {
+        "status": "available",
+        "source": "Herramienta nativa ask_question expuesta y operativa"
+      },
+      "web": {
+        "status": "available",
+        "source": "Herramienta search_web expuesta y operativa"
+      },
+      "terminal": {
+        "status": "available",
+        "source": "PowerShell en Windows ejecutado mediante run_command"
+      },
+      "render": {
+        "status": "available",
+        "source": "Servidor MCP chrome-devtools expuesto y operativo"
+      },
+      "delegation": {
+        "status": "unknown",
+        "source": "No delegada explícitamente por el usuario aún"
+      }
+    }
+  },
+  "decisions": [
+    {
+      "id": "stack-frontend",
+      "topic": "technology",
+      "status": "approved",
+      "value": "React + Vite + TypeScript + Tailwind CSS puro (Boutique Minimalist / Editorial Suizo anti-slop) + Lucide Icons + directrices Better UI/Accessibility (sin plantillas de shadcn)",
+      "basis": "El usuario aprobó formalmente el 2026-10-30 la transición hacia la Opción B (Boutique Minimalist / Editorial Suizo) con rampa de color alabastro cálido, tarjetas 3D táctiles con reflejo especular dinámico y giro 180°, y comprobante tipo voucher bancario impreso.",
+      "required": true,
+      "sources": [
+        {
+          "url": "https://vite.dev",
+          "consultedAt": "2026-10-30T21:54:00.000Z",
+          "appliesTo": "frontend",
+          "authority": "official"
+        },
+        {
+          "url": "https://tailwindcss.com",
+          "consultedAt": "2026-10-30T21:54:00.000Z",
+          "appliesTo": "frontend",
+          "authority": "official"
+        }
+      ],
+      "recordedAt": "2026-10-30T23:41:56.159Z",
+      "revision": 3
+    },
+    {
+      "id": "git-local-setup",
+      "topic": "setup",
+      "status": "approved",
+      "value": "Git local en rama main con convención Conventional Commits 1.0.0",
+      "basis": "El usuario autorizó explícitamente la inicialización local de Git en rama main y convención Conventional Commits el 2026-10-30.",
+      "required": false,
+      "sources": [
+        {
+          "url": "https://www.conventionalcommits.org/en/v1.0.0/",
+          "consultedAt": "2026-10-30T21:38:00.000Z",
+          "appliesTo": "git",
+          "authority": "official"
+        }
+      ],
+      "recordedAt": "2026-10-30T21:38:47.498Z",
+      "revision": 1
+    }
+  ]
+}
